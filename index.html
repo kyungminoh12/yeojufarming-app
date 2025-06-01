@@ -1,1 +1,26 @@
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>여주파밍 앱</title>
+</head>
+<body>
+  <h1>여주 농촌체험 웹앱</h1>
+  <p>꼬마농부 뱃지를 모아보세요!</p>
+  <button onclick="shareToInstagram()">📸 인스타그램에 공유</button>
+  <button onclick="shareToFacebook()">📘 페이스북에 공유</button>
+
+  <script>
+    function shareToInstagram() {
+      alert("인스타그램 공유는 직접 스토리 업로드를 권장합니다. 이미지를 저장 후 업로드해주세요!");
+    }
+
+    function shareToFacebook() {
+      const url = encodeURIComponent(window.location.href);
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+    }
+  </script>
+</body>
+</html>
