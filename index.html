@@ -1,41 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>여주 파밍 미션</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>🌽 여주 파밍 미션 인증</h1>
-      <p>QR로 들어온 체험지를 인증하고 꼬마농부 뱃지를 획득하세요!</p>
-
-      <form
-        action="https://docs.google.com/forms/d/e/1FAIpQLSf_nQUNIQUEFORMURL/viewform"
-        method="GET"
-        target="_blank"
-      >
-        <label for="photo">📸 인증 사진:</label>
-        <input type="file" id="photo" accept="image/*" required />
-        <label for="comment">✏️ 느낀점 한 줄:</label>
-        <input type="text" id="comment" placeholder="오늘의 체험은 어땠나요?" required />
-        <button type="submit">제출하고 뱃지 받기 🎁</button>
-      </form>
-
-      <div class="share">
-        <p>🎉 체험을 완료했나요? 친구들과 공유해보세요!</p>
-        <a
-          href="https://www.facebook.com/sharer/sharer.php?u=https://yeojufarming.vercel.app"
-          target="_blank"
-          >📘 Facebook에 공유</a
-        >
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          >📸 Instagram에 공유</a
-        >
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>여주파밍 미션 인증</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 여주파밍 미션 인증 완료!</h1>
+    <img src="badge.png" alt="꼬마농부 뱃지" class="badge-img" />
+    <p class="message">🥳 축하합니다! 꼬마농부 뱃지를 획득했어요!</p>
+    <p class="sub-message">🔥 다음 뱃지도 도전해볼까요?</p>
+    <button id="next-button">🗺️ 여섯 체험지 보기</button>
+    <div id="map-section" class="hidden">
+      <h2>🧭 냠냠이 체험지 지도</h2>
+      <img src="map.png" alt="체험지 지도" class="map-img"/>
     </div>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
