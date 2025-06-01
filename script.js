@@ -1,2 +1,3 @@
-// 추후 기능 추가 시 사용 가능
-console.log("여주 파밍 미션 인증 앱 시작");
+document.getElementById("next-button").addEventListener("click", function () {
+  document.getElementById("map-section").classList.remove("hidden");
+});
